@@ -13,6 +13,4 @@ public class CategoriaRequestDto {
     @NotBlank
     private String nome;
 
-    @NotBlank
-    private String descricao;
 }

@@ -20,7 +20,6 @@ public class CategoriaEntity {
     private long id;
 
     private String nome;
-    private String descricao;
 
     @OneToMany(mappedBy = "categoria")
     private List<TarefasEntity> tarefas;
