@@ -23,15 +23,15 @@ public class TarefasEntity {
     private String titulo;
     private String descricao;
 
-    @Enumerated
+    @Enumerated(EnumType.STRING)
     private TarefaStatus status;
 
-    @Enumerated
+    @Enumerated(EnumType.STRING)
     private TarefaPrioridade prioridade;
 
     private LocalDate dataCriacao;
     private LocalDate prazo;
-    private boolean concluída;
+    private boolean concluida;
 
     @ManyToOne
     @JoinColumn(name = "categoria_id")
